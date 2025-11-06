@@ -115,7 +115,7 @@ class Frame:
 
     def hasLimb(self, limb_name):
         """
-        Check if the Frame contains a limb with the specified name.
+        check if the Frame contains a limb with the specified name.
 
         :param limb_name: Name of the limb to check
         :return: True if the limb is found, False otherwise
