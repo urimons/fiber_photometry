@@ -286,5 +286,6 @@ def fit_curve_to_signal(denoised_signal, time_seconds):
               [max_sig, max_sig, max_sig, 36000, 1])
     parms, parm_cov = curve_fit(double_exponential, time_seconds, denoised_signal, 
                                   p0=inital_params, bounds=bounds, maxfev=1000)
+    print(parms)
     expfit = double_exponential(time_seconds, *parms)
     return expfit
